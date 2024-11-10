@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Prediction Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Sales Prediction Dashboard</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="store_id">Store ID:</label>
+        <input type="number" name="store_id" required>
+
+        <label for="csv_file">Upload CSV File:</label>
+        <input type="file" name="csv_file" accept=".csv" required>
+
+        <!-- Add any other additional fields required by the model here -->
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
